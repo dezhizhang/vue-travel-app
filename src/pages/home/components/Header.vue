@@ -1,8 +1,16 @@
 <template>
   <div class='header'>
-      <div class='header-left'>返回</div>
-      <div class='header-center'>输入城市景点/旅玩主题</div>
-      <div class='header-right'>城市</div>
+      <div class='header-left iconfont icon-fanhui'>
+        <span class='iconfont icon-back'>&#xe624;</span>
+      </div>
+      <div class='header-center'>
+        <span class='iconfont'>&#xe632;</span>
+        输入城市景点/旅玩主题
+      </div>
+      <div class='header-right'>
+         城市
+         <span class='iconfont icon-arrow'>&#xe6aa;</span>
+      </div>
   </div>
 </template>
 
@@ -29,6 +37,10 @@
 
 
   }
+  .icon-back{
+      font-size:.4rem;
+      text-align:center;
+  }
   .header-center{
       flex:1;
       background:#fff;
@@ -38,6 +50,7 @@
       margin-left:.2rem;
       color:#ccc;
       line-height:.64rem;
+      padding-left:.2rem;
 
   }
 
@@ -45,6 +58,11 @@
       width:1.24rem;
       text-align:center;
       float:right;
+  }
+
+  .icon-arrow{
+      font-size:.36rem;
+
   }
     
 </style>
