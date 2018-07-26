@@ -69,7 +69,6 @@ export default{
 
 <style scoped>
   .weekend-title{
-      margin-top:.1rem;
       line-height:.8rem;
       background:#eee;
       text-indent:.2rem;
