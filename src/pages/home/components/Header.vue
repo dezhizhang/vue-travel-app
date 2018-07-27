@@ -7,10 +7,14 @@
         <span class='iconfont'>&#xe632;</span>
          请输入城市名/旅玩主题
       </div>
-      <div class='header-right'>
-         城市
-         <span class='iconfont icon-arrow'>&#xe6aa;</span>
-      </div>
+     
+        <div class='header-right'>
+           <router-link to='/city'>
+            城市
+            <span class='iconfont icon-arrow'>&#xe6aa;</span>
+            </router-link>
+        </div>
+      
   </div>
 </template>
 
@@ -58,6 +62,12 @@
       width:1.24rem;
       text-align:center;
       float:right;
+    
+  }
+
+  .header-right a{
+      color:#fff;
+
   }
 
   .icon-arrow{

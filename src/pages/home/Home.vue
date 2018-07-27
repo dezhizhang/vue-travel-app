@@ -29,12 +29,9 @@ export default{
       this.getInfo()
     },
     methods:{
-      getInfo(){
-        axios.get('/api/index.josn').then(res=>{
-          console.log(res);
-          
-        })
-      }
+       getInfo(){
+         
+       }
     }
     
 }
