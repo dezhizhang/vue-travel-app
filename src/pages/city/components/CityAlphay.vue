@@ -1,24 +1,19 @@
 <template>
   <div class='alphay'>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
-    <div class='item'>A</div>
+    <div v-for='(item,key) in cities' :key="key">
+      <div class='item'>{{key}}</div>
+    </div>
   </div>
 </template>
 
 <script>
 export default{
-  name:'CityAlphay'
+  name:'CityAlphay',
+  props:{
+    cities:Object
+  },
+
+  
 }
 </script>
 
