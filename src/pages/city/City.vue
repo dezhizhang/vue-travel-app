@@ -1,9 +1,9 @@
 <template>
    <div class='city'>
-     <CityHeader/>
-     <CitySearch/>
-     <CityList :cities='cities' :hotCitys='hotCitys'/>
-     <CityAlphay :cities='cities'/>
+        <CityHeader/>
+        <CitySearch/>
+        <CityList :cities='cities' :hotCitys='hotCitys' :letter='letter'/>
+        <CityAlphay :cities='cities' @change='handleLetterChange'/>
    </div>
 </template>
 
@@ -24,7 +24,8 @@ export default{
     data(){
         return {
             cities:{},
-            hotCitys:[]
+            hotCitys:[],
+            letter:''
         }
     },
 
@@ -33,7 +34,6 @@ export default{
         getCityInfo(){
             axios.get('/api/city.json').then(res=>{
         
-                console.log(res.data.data.cities);
 
                  if(res.data.ret && res.data.data){
                      this.cities=res.data.data.cities;
@@ -43,6 +43,13 @@ export default{
 
 
             })
+        },
+
+        handleLetterChange(letter){
+           this.letter=letter;
+          
+
+
         }
     },
 

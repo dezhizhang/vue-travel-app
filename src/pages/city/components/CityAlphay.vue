@@ -1,7 +1,7 @@
 <template>
   <div class='alphay'>
     <div v-for='(item,key) in cities' :key="key">
-      <div class='item'>{{key}}</div>
+      <div class='item' @click="handleLetterClick">{{key}}</div>
     </div>
   </div>
 </template>
@@ -12,6 +12,12 @@ export default{
   props:{
     cities:Object
   },
+  methods:{
+    handleLetterClick(ev){
+       this.$emit('change',ev.target.innerText);
+       
+    }
+  }
 
   
 }
