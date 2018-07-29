@@ -4,7 +4,7 @@
         <input v-model='keyword' class='search-input' type='text' placeholder='请输入城市名或拼音'/>
         <div class='search-content' ref='search' v-show='keyword'>
         <ul>
-            <li class='search-item'  v-for='item in list' :key='item.id'>{{item.name}}</li>
+            <li class='search-item'  v-for='item in list' :key='item.id' @click='handleClick(item.name)'>{{item.name}}</li>
             <li class='search-item' v-show='hasNoDate'>没有找到匹配数据</li>
         </ul>
         </div>
@@ -38,6 +38,14 @@ export default{
             return !this.list.length;
         }
     },
+    methods:{
+        handleClick(city){
+        this.$store.dispatch('changeCity',city);
+        this.$router.push('/')
+
+      }
+    },
+
 
     watch:{
         keyword(){

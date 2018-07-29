@@ -5,21 +5,21 @@
           <div class='title border-topbottom'>当前城市</div>
           <div class='button-list'>
             <div class='button-wrap'>
-              <div class='button'>北京</div>
+              <div class='button'>{{this.$store.state.city}}</div>
             </div>
           </div>
         </div>
         <div class='area'>
           <div class='title border-topbottom'>热门城市</div>
           <div class='button-list'>
-            <div class='button-wrap' v-for='item in hotCitys' :key="item.id">
+            <div class='button-wrap' v-for='item in hotCitys' :key="item.id" @click='handleClick(item.name)'>
               <div class='button'>{{item.name}}</div>
             </div>
           </div>
         </div>
         <div class='area' v-for='(item,key) in cities' :key='key' :ref='key'>
           <div class='title border-topbottom'>{{key}}</div>
-          <div class='item-list' v-for='innerItem in item' :key="innerItem.id">
+          <div class='item-list' v-for='innerItem in item' :key="innerItem.id" @click='handleClick(innerItem.name)'>
             <div class='item'>{{innerItem.name}}</div>
           </div>
         </div>
@@ -42,6 +42,17 @@ export default{
       this.scroll=new BetterScroll(this.$refs.wrapper);
       
     },
+    methods:{
+      handleClick(city){
+        this.$store.dispatch('changeCity',city);
+        this.$router.push('/');
+
+
+      }
+
+
+    },
+
 
     watch:{
       letter(){ 
