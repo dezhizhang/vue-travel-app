@@ -58,7 +58,7 @@ export default{
            desc:'领券'
          },
          {
-           id:uuid(),
+           id:'0009',
            imgUrl:'https://m.360buyimg.com/mobilecms/jfs/t21481/263/412160889/15938/4246b4f8/5b0cea29N8fb2865f.png',
            desc:'全部'
          }

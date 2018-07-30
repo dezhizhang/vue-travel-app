@@ -22,49 +22,49 @@ export default{
         return {
             recommendList:[
                 {
-                  id:uuid(),
+                  id:'0001',
                   imgUrl:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1830359176,654163576&fm=200&gp=0.jpg',
                   title:'大连圣亚海洋世界',
                   desc:'浪漫大连首都，浪漫主题海洋乐园'
                 },
                 {
-                  id:uuid(),
+                  id:'0002',
                   imgUrl:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3033037990,1425076943&fm=200&gp=0.jpg',
                   title:'大连圣亚海洋世界',
                   desc:'浪漫大连首都，浪漫主题海洋乐园'
                 },
                 {
-                  id:uuid(),
+                  id:'0003',
                   imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3545575964,2149126446&fm=27&gp=0.jpg',
                   title:'大连圣亚海洋世界',
                   desc:'浪漫大连首都，浪漫主题海洋乐园'
                 },
                 {
-                  id:uuid(),
+                  id:'0004',
                   imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2944094007,2505799703&fm=27&gp=0.jpg',
                   title:'大连圣亚海洋世界',
                   desc:'浪漫大连首都，浪漫主题海洋乐园'
                 },
                 {
-                  id:uuid(),
+                  id:'0005',
                   imgUrl:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1830359176,654163576&fm=200&gp=0.jpg',
                   title:'大连圣亚海洋世界',
                   desc:'浪漫大连首都，浪漫主题海洋乐园'
                 },
                 {
-                  id:uuid(),
+                  id:'0006',
                   imgUrl:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3033037990,1425076943&fm=200&gp=0.jpg',
                   title:'大连圣亚海洋世界',
                   desc:'浪漫大连首都，浪漫主题海洋乐园'
                 },
                 {
-                  id:uuid(),
+                  id:'0007',
                   imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3545575964,2149126446&fm=27&gp=0.jpg',
                   title:'大连圣亚海洋世界',
                   desc:'浪漫大连首都，浪漫主题海洋乐园'
                 },
                 {
-                  id:uuid(),
+                  id:'0008',
                   imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2944094007,2505799703&fm=27&gp=0.jpg',
                   title:'大连圣亚海洋世界',
                   desc:'浪漫大连首都，浪漫主题海洋乐园'
