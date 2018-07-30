@@ -43,6 +43,10 @@ export default{
     activated() {
       window.addEventListener('scroll',this.handleScroll)
     },
+    deactivated() {
+      window.removeEventListener('scroll',this.handleScroll);
+
+    },
     
 }
 </script>
@@ -77,6 +81,8 @@ export default{
     line-height:.86rem;
     text-align:center;
     background:#00bcd4;
+    z-index:10;
+    
 
 }
 
